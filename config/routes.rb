@@ -1,4 +1,19 @@
 CSSSite::Application.routes.draw do
+
+  match "/" => "main#index"
+
+  match "/index" => "main#index"
+
+  match "/about" => "main#about"
+
+  match "/help" => "main#help"
+
+  get "main/index"
+
+  get "main/about"
+
+  get "main/help"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
